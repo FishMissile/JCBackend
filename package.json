@@ -1,0 +1,27 @@
+{
+  "name": "jcbackend",
+  "version": "0.3.0",
+  "description": "Jagged Commandos backend",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "cors": "2.8.4",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-graphql": "0.6.12",
+    "gamedig": "1.0.46",
+    "graphql": "0.13.2",
+    "lodash": "4.17.10"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "license": "MIT"
+}
