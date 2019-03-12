@@ -8,8 +8,12 @@ const schema = require("./schema/schema");
 const cors = require("cors");
 const Gamedig = require("gamedig");
 
+var corsOptions = {
+  origin: 'http://jaggedcommandos.net',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get('/recent/:key/:id', function(req, res) {
   const recentgames = "http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=" + req.params.key + "&steamid=" + req.params.id + "&format=json"
