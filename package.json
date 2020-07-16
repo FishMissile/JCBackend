@@ -17,7 +17,7 @@
     "express-graphql": "0.6.12",
     "gamedig": "1.0.46",
     "graphql": "0.13.2",
-    "lodash": "4.17.10"
+    "lodash": "4.17.19"
   },
   "devDependencies": {
     "request": "^2.81.0",
